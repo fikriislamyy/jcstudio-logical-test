@@ -1,10 +1,8 @@
 function filterInputCharacters(inputElement) {
   const inputValue = inputElement.value;
 
-  // Use a regular expression to filter out non-word characters
   const filteredValue = inputValue.replace(/[^a-zA-Z\s]/g, "");
 
-  // Update the input value to contain only letters
   inputElement.value = filteredValue;
 }
 
@@ -241,7 +239,6 @@ document.getElementById("openModalBtn").addEventListener("click", function () {
   $("#inputModal").modal("show");
 });
 
-// Handle the calculation when the "Calculate" button in the modal is clicked
 document.getElementById("calculateBtn").addEventListener("click", function () {
   var length = parseInt(document.getElementById("inputLength").value);
   var inputNumbers = document.getElementById("inputNumbers").value;
